@@ -1,0 +1,106 @@
+## CodeBook
+
+## Tidy Dataset information
+The data depicts experimental carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. For each subject and each activity average data of below features are represented. Hence there are 180 (30 x 6) rows to this dataset. 
+
+### Brief description of features
+
+a) Triaxial (time domain signal) body acceleration mean and standard deviation  
+TimeBodyAccelerometer.Mean.XAxis 
+TimeBodyAccelerometer.Mean.YAxis 
+TimeBodyAccelerometer.Mean.ZAxis 
+TimeBodyAccelerometer.StdDeviation.XAxis 
+TimeBodyAccelerometer.StdDeviation.YAxis 
+TimeBodyAccelerometer.StdDeviation.ZAxis 
+
+b) Triaxial (time domain signal) gravity acceleration mean and standard deviation  
+TimeGravityAccelerometer.Mean.XAxis 
+TimeGravityAccelerometer.Mean.YAxis 
+TimeGravityAccelerometer.Mean.ZAxis 
+TimeGravityAccelerometer.StdDeviation.XAxis 
+TimeGravityAccelerometer.StdDeviation.YAxis 
+TimeGravityAccelerometer.StdDeviation.ZAxis 
+
+c) Triaxial (time domain signal) body jerk acceleration mean and standard deviation  
+TimeBodyAccelerometerJerk.Mean.XAxis 
+TimeBodyAccelerometerJerk.Mean.YAxis 
+TimeBodyAccelerometerJerk.Mean.ZAxis 
+TimeBodyAccelerometerJerk.StdDeviation.XAxis 
+TimeBodyAccelerometerJerk.StdDeviation.YAxis 
+TimeBodyAccelerometerJerk.StdDeviation.ZAxis 
+
+d) Triaxial (time domain signal) body acceleration mean and standard deviation measured by gyroscope 
+TimeBodyGyroscope.Mean.XAxis 
+TimeBodyGyroscope.Mean.YAxis 
+TimeBodyGyroscope.Mean.ZAxis 
+TimeBodyGyroscope.StdDeviation.XAxis 
+TimeBodyGyroscope.StdDeviation.YAxis 
+TimeBodyGyroscope.StdDeviation.ZAxis 
+
+e) Triaxial (time domain signal) body jerk acceleration mean and standard deviation measured by gyroscope  
+TimeBodyGyroscopeJerk.Mean.XAxis 
+TimeBodyGyroscopeJerk.Mean.YAxis 
+TimeBodyGyroscopeJerk.Mean.ZAxis 
+TimeBodyGyroscopeJerk.StdDeviation.XAxis 
+TimeBodyGyroscopeJerk.StdDeviation.YAxis 
+TimeBodyGyroscopeJerk.StdDeviation.ZAxis 
+
+f) Magnitude of above triaxial signals - calculated using Euclidean norm
+TimeBodyAccelerometerMagnitude.Mean 
+TimeBodyAccelerometerMagnitude.StdDeviation 
+TimeGravityAccelerometerMagnitude.Mean 
+TimeGravityAccelerometerMagnitude.StdDeviation 
+TimeBodyAccelerometerJerkMagnitude.Mean 
+TimeBodyAccelerometerJerkMagnitude.StdDeviation 
+TimeBodyGyroscopeMagnitude.Mean 
+TimeBodyGyroscopeMagnitude.StdDeviation 
+TimeBodyGyroscopeJerkMagnitude.Mean 
+TimeBodyGyroscopeJerkMagnitude.StdDeviation 
+
+g) Triaxial (frequency domain signal) body acceleration mean and standard deviation 
+FreqBodyAccelerometer.Mean.XAxis 
+FreqBodyAccelerometer.Mean.YAxis 
+FreqBodyAccelerometer.Mean.ZAxis 
+FreqBodyAccelerometer.StdDeviation.XAxis 
+FreqBodyAccelerometer.StdDeviation.YAxis 
+FreqBodyAccelerometer.StdDeviation.ZAxis 
+
+h) Triaxial (frequency domain signal) body jerk acceleration mean and standard deviation  
+FreqBodyAccelerometerJerk.Mean.XAxis 
+FreqBodyAccelerometerJerk.Mean.YAxis 
+FreqBodyAccelerometerJerk.Mean.ZAxis 
+FreqBodyAccelerometerJerk.StdDeviation.XAxis 
+FreqBodyAccelerometerJerk.StdDeviation.YAxis 
+FreqBodyAccelerometerJerk.StdDeviation.ZAxis 
+
+i) Triaxial (frequency domain signal) body acceleration mean and standard deviation measured by gyroscope 
+FreqBodyGyroscope.Mean.XAxis 
+FreqBodyGyroscope.Mean.YAxis 
+FreqBodyGyroscope.Mean.ZAxis 
+FreqBodyGyroscope.StdDeviation.XAxis 
+FreqBodyGyroscope.StdDeviation.YAxis 
+FreqBodyGyroscope.StdDeviation.ZAxis 
+
+
+j) Magnitude of above triaxial signals - calculated using Euclidean norm
+FreqBodyAccelerometerMagnitude.Mean 
+FreqBodyAccelerometerMagnitude.StdDeviation 
+FreqBodyBodyAccelerometerJerkMagnitude.Mean 
+FreqBodyBodyAccelerometerJerkMagnitude.StdDeviation 
+FreqBodyBodyGyroscopeMagnitude.Mean 
+FreqBodyBodyGyroscopeMagnitude.StdDeviation 
+FreqBodyBodyGyroscopeJerkMagnitude.Mean 
+FreqBodyBodyGyroscopeJerkMagnitude.StdDeviation
+
+
+## Additional reference on feature calculation
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
